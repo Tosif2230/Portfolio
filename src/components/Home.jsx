@@ -68,10 +68,7 @@ const Home = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-dela="600"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed vel
-              reprehenderit iusto, natus incidunt quas exercitationem assumenda
-              quis atque totam ea nulla alias hic. Amet doloribus fugiat
-              veritatis et sed!
+              MERN Stack Developer | MongoDB • Express.Js • React • Node.Js 
             </p>
             {/* Button */}
             <div className="w-full pt-4 sm:pt-6">
