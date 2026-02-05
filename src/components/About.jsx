@@ -56,21 +56,7 @@ const About = ({ darkMode }) => {
             real-world projects, and growing as a software developer.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
-            {/* Education */}
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="650"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                5+
-              </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}
-              >
-                Education
-              </div>
-            </div>
+
             {/* Years Experience */}
             <div
               className="text-center"
@@ -78,7 +64,7 @@ const About = ({ darkMode }) => {
               data-aos-delay="650"
             >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                5+
+                6+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}

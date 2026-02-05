@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar.jsx";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Home from "./components/Home.jsx";
+import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <Home darkMode={darkMode}/>
       <About darkMode={darkMode}/>
+      <Skills darkMode={darkMode}/>
     </div>
   );
 };
