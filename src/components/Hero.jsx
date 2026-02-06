@@ -8,7 +8,7 @@ import CV from "../assets/MohammedTosif_Resume.pdf";
 import { DownloadIcon, Mail } from "lucide-react";
 
 
-const Home = ({ darkMode }) => {
+const Hero = ({ darkMode }) => {
   const socialIcons = [
     { icon: LinkedIn, alt: "LinkedIn" },
     { icon: GitHub, alt: "GitHub" },
@@ -121,4 +121,4 @@ const Home = ({ darkMode }) => {
   );
 };
 
-export default Home;
+export default Hero;
