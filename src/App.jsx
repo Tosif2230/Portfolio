@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Project from "./components/Project.jsx";
+import Contact from "./components/Contact.jsx";
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
       <About darkMode={darkMode}/>
       <Skills darkMode={darkMode}/>
       <Project darkMode={darkMode}/>
+      <Contact darkMode={darkMode} />
     </div>
   );
 };
