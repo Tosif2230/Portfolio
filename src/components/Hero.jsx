@@ -1,6 +1,6 @@
 import LinkedIn from "../assets/LinkedIn.png";
 import GitHub from "../assets/github.png";
-import YouTube from "../assets/YouTube";
+import YouTube from "../assets/YouTube.png";
 import Discord from "../assets/Discord.png";
 import Tosif from "../assets/Tosif.png";
 import Hello from "../assets/Hello.png"
