@@ -56,7 +56,7 @@ Add or remove sections as needed
 
 This project can be easily deployed on:
 
-Vercel - <a href="https://portfolio-5qm5dbep6-mohammed-tosifs-projects.vercel.app/">Live Demo</a>
+Vercel - <a href="https://portfolio-git-main-mohammed-tosifs-projects.vercel.app">Live Demo</a>
 
 Netlify
 
