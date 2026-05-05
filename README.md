@@ -25,7 +25,7 @@ This project showcases projects, skills, and experience with smooth animations a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/responsive-portfolio.git
+   git clone https://github.com/Tosif2230/Portfolio.git
 
 2. Navigate to the project directory:
    cd responsive-portfolio
@@ -56,9 +56,7 @@ Add or remove sections as needed
 
 This project can be easily deployed on:
 
-Vercel - <a href="https://portfolio-git-main-mohammed-tosifs-projects.vercel.app">Live Demo</a>
-
-Netlify
+Vercel - <a href="https://portfolio-rust-six-79.vercel.app/">Live Demo</a>
 
 🤝 Contributing
 
