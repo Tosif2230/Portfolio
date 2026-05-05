@@ -7,10 +7,10 @@ const Contact = ({ darkMode }) => {
       style={{
         backgroundColor: darkMode ? "#111827" : "#f9fafb",
       }}
-      className="py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden"
+      className="py-16 sm:py-16 md:py-18 lg:py-20 overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-10 md:mb-12" data-aos="fade-up">
+        <div className="text-center" data-aos="fade-up">
           <h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3"
             style={{ color: darkMode ? "white" : "#1f2937" }}
@@ -36,7 +36,7 @@ const Contact = ({ darkMode }) => {
             Let's discuss
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
           <div
             className="flex justify-center order-2 lg:order-1"
             data-aos="fade-right"
@@ -57,7 +57,7 @@ const Contact = ({ darkMode }) => {
             className="rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 border shadow-lg order-1 lg:order-2"
             data-aos="fade-left"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4" >
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-3 sm:mb-4" >
               <input
                 type="text"
                 placeholder="First Name"

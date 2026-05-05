@@ -1,6 +1,6 @@
 import React from "react";
-import project1 from "../assets/YouTube_Clone.png";
-import project2 from "../assets/Portfolio.png";
+import project1 from "../assets/Twitter.jpg";
+import project2 from "../assets/YouTube_Clone.png";
 import project3 from "../assets/ShoppyGlobe.png";
 import project4 from "../assets/Online_Library.png";
 import project5 from "../assets/To-Do_App.png";
@@ -11,17 +11,21 @@ function Project({ darkMode }) {
   const projects = [
     {
       id: 1,
-      title: "YouTube-Clone",
+      title: "Twitter Clone",
       desc: "MERN Stack Project",
       image: project1,
-      tags: ["MongoDB", "Express.js", "React", "Node.js"],
+      tags: ["MERN", "Firebase", "Next.JS", "i18next", "RazorPay"],
+      demoLink: "https://mern-twitter-clone-lime.vercel.app/",
+      codeLink: "https://github.com/Tosif2230/MERN-Twitter-Clone",
     },
     {
       id: 2,
-      title: "Portfolio",
-      desc: "Personal Portfolio Website",
+      title: "YouTube-Clone",
+      desc: "MERN Stack Project",
       image: project2,
-      tags: ["React", "NodeJS", "Framer_Motion", "Tailwind_CSS"],
+      tags: ["MongoDB", "Express.js", "React", "Node.js"],
+      demoLink: "https://capstone-mern-you-tube-clone.vercel.app/",
+      codeLink: "https://github.com/Tosif2230/Capstone-MERN-YouTube-Clone",
     },
     {
       id: 3,
@@ -29,6 +33,8 @@ function Project({ darkMode }) {
       desc: "E-Commerce Website using Products API",
       image: project3,
       tags: ["React", "NodeJS", "MongoDB"],
+      demoLink: "https://shoppy-globe-ebon.vercel.app/",
+      codeLink: "https://github.com/Tosif2230/ShoppyGlobe",
     },
     {
       id: 4,
@@ -36,6 +42,8 @@ function Project({ darkMode }) {
       desc: "Online library for book managment system",
       image: project4,
       tags: ["React", "NodeJS", "MongoDB"],
+      demoLink: "https://react-online-library-one.vercel.app/",
+      codeLink: "https://github.com/Tosif2230/React-Online-Library",
     },
     {
       id: 5,
@@ -43,6 +51,9 @@ function Project({ darkMode }) {
       desc: "To-Do Application for daily tasks.",
       image: project5,
       tags: ["React", "NodeJS"],
+      demoLink: "https://tosif2230-to-do-list-using-react-js.vercel.app/",
+      codeLink:
+        "https://github.com/Tosif2230/Tosif2230-To-Do-List-using-ReactJS",
     },
     {
       id: 6,
@@ -50,6 +61,8 @@ function Project({ darkMode }) {
       desc: "Weather Forcast Website",
       image: project6,
       tags: ["HTML", "Tailwind_CSS", "JavaScript"],
+      demoLink: "https://tosif2230.github.io/Weather-Forecast-App/",
+      codeLink: "https://github.com/Tosif2230/Weather-Forecast-App",
     },
   ];
   return (
@@ -66,7 +79,7 @@ function Project({ darkMode }) {
             className="text-3xl sm:text-4xl font-bold mb-3"
             style={{ color: darkMode ? "white" : "#1f2937" }}
           >
-            My{" "}
+            My
             <span
               style={{
                 background: "linear-gradient(to right, #f97316,#f59e0b)",
@@ -139,7 +152,9 @@ function Project({ darkMode }) {
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="#"
+                    href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: darkMode ? "#374151" : "#f3f4f6",
                       color: darkMode ? "white" : "#374151",
@@ -153,7 +168,9 @@ function Project({ darkMode }) {
                   </a>
                   {/* Demo */}
                   <a
-                    href="#"
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       background: "linear-gradient(to right, #f93716,#f59e0b)",
                     }}
@@ -171,7 +188,8 @@ function Project({ darkMode }) {
         </div>
         <div className="text-center mt-10">
           <a
-            href="#"
+            href="https://github.com/Tosif2230?tab=repositories"
+            target="_blank"
             style={{
               background: "linear-gradient(to right, #f93716,#f59e0b)",
             }}

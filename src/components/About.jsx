@@ -7,7 +7,7 @@ const About = ({ darkMode }) => {
       id="about"
       className={`min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6`}
     >
-      <div className="max-w-6xl w-full items-center grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 ">
+      <div className="max-w-8xl w-full items-center grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 pb-4 py-18">
         <figure
           data-aos="fade-up"
           data-aos-delay="300"
@@ -36,7 +36,7 @@ const About = ({ darkMode }) => {
         >
           <header>
             <h1
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-transparent bg-linear-to-r from-orange-400 to-orange-600 bg-clip-text"
+              className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 sm:mb-5 text-transparent bg-linear-to-r from-orange-400 to-orange-600 bg-clip-text"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -44,42 +44,31 @@ const About = ({ darkMode }) => {
             </h1>
           </header>
           <p
-            className={`text-sm sm:text-base lg:text-lg xl-text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${darkMode ? "text-gray-300" : "text-gray-700"}`}
+            className={`text-sm sm:text-base lg:text-lg xl-text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-3 sm:p-5 rounded-xl sm:rounded-2xl backdrop-blur-sm ${darkMode ? "text-gray-300" : "text-gray-700"}`}
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Hi, I'm Mohammed Tosif — a MERN Stack developer with a background in
-            Mechanical Engineering. I build responsive, user-friendly web
-            applications using React, Node.js, Express, and MongoDB. My
-            engineering background helps me approach problems with logic,
-            structure, and efficiency. I'm passionate about learning, building
-            real-world projects, and growing as a software developer.
+            I’m a Full Stack Developer specializing in the MERN stack, with
+            hands-on experience in Next.js, Firebase, and internationalization
+            using i18next. I build fast, scalable, and production-ready web
+            applications with features like server-side rendering, real-time
+            data handling, and multi-language support. With a background in
+            Mechanical Engineering, I bring a structured and problem-solving
+            approach to development. I enjoy taking ownership of features
+            end-to-end — from designing user interfaces to implementing backend
+            logic and deploying reliable solutions. I’m currently looking to
+            join a product-focused company where I can contribute to real-world
+            applications, move fast, and continue growing as a developer.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
-
-            {/* Years Experience */}
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="650"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                6+
-              </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}
-              >
-                Years Experience
-              </div>
-            </div>
             {/* Projects Completed */}
             <div
               className="text-center"
               data-aos="zoom-in"
               data-aos-delay="700"
             >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                15+
+              <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-400">
+                25+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}
@@ -87,13 +76,44 @@ const About = ({ darkMode }) => {
                 Projects Completed
               </div>
             </div>
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-400">
+                Hands-on
+              </div>
+              <div
+                className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}
+              >
+                Web Development Experience
+              </div>
+            </div>
+            {/* Years Experience */}
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-400">
+                6+
+              </div>
+              <div
+                className={`text-xs sm:text-sm lg:text-base ${darkMode ? "text-gray-300" : "text-gray-600"}`}
+              >
+                Years in Mechanical Engineering
+              </div>
+            </div>
           </div>
           <button
-            className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${darkMode? 'text-white bg-orange-500/10'
-            : 'text-gray-800 bg-white/90'
+            className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
+              darkMode
+                ? "text-white bg-orange-500/10"
+                : "text-gray-800 bg-white/90"
             }`}
-            data-aos='fade-up'
-            data-aos-delay='800'
+            data-aos="fade-up"
+            data-aos-delay="750"
           >
             Learn More
           </button>

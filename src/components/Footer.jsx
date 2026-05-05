@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = ({ darkMode }) => {
   const currentYear = new Date().getFullYear();
@@ -28,27 +29,27 @@ const Footer = ({ darkMode }) => {
           </div>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/Tosif2230" target="_blank"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaGithub />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/mohammed-tosif/" target="_blank"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaLinkedin />
             </a>
             <a
-              href="#"
+              href="https://x.com/TechieTosif" target="_blank"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
-              <FaTwitter />
+              <FaXTwitter />
             </a>
           </div>
           <div className="text-center md:text-right">
             <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-              @ {currentYear} Made by
+              &#169;{currentYear} Made by
               <span className="mt-1 text-[#f97316]">Mohammed Tosif</span>
             </p>
           </div>

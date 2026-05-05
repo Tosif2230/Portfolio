@@ -6,6 +6,9 @@ import expressjs from "../assets/Express.png";
 import react from "../assets/React.png";
 import redux from "../assets/Redux.png";
 import nodejs from "../assets/nodejs.png";
+import NextJS from "../assets/NextJS.png";
+import Firebase from "../assets/Firebase.png";
+import i18next from "../assets/i18next.png";
 import python from "../assets/Python.png";
 import framer_motion from "../assets/FramerMotion.jpg";
 const Skills = ({ darkMode }) => {
@@ -43,7 +46,7 @@ const Skills = ({ darkMode }) => {
     {
       name: "Redux",
       icon: redux,
-      level: 80,
+      level: 70,
       color: "from-purple-500 to-purple-800",
     },
     {
@@ -53,15 +56,33 @@ const Skills = ({ darkMode }) => {
       color: "from-green-500 to-emerald-500",
     },
     {
+      name: "Next.JS",
+      icon: NextJS,
+      level: 80,
+      color: "from-white to-black",
+    },
+    {
+      name: "Firebase",
+      icon: Firebase,
+      level: 70,
+      color: "from-orange-600 to-white",
+    },
+    {
+      name: "i18Next",
+      icon: i18next,
+      level: 70,
+      color: "from-black to-white",
+    },
+    {
       name: "framer motion",
       icon: framer_motion,
-      level: 80,
+      level: 60,
       color: "from-purple-600 to-blue-800",
     },
     {
       name: "Python",
       icon: python,
-      level: 80,
+      level: 60,
       color: "from-blue-500 to-yellow-500",
     },
   ];
