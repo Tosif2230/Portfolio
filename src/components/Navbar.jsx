@@ -2,6 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 
+const MotionA = motion.a;
+const MotionButton = motion.button;
+const MotionDiv = motion.div;
+const MotionNav = motion.nav;
+const MotionSpan = motion.span;
+
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,22 +20,22 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: "Contact", link: "#contact" },
   ];
   const lightColors = {
-    navBg: "bg-linear-to-br from-orange-200 to-white",
+    navBg: "bg-white/85 border border-[#39ff14]/20",
     textPrimary: "text-gray-900",
     textSecondary: "text-gray-800",
-    textHover: "text-orange-500",
-    textActive: "text-orange-600",
-    indicator: "from-orange-500 to-amber-500",
-    button: "from-orange-500 to-amber-500",
+    textHover: "hover:text-[#16a34a]",
+    textActive: "text-[#16a34a]",
+    indicator: "from-[#39ff14] to-[#b7ff3c]",
+    button: "from-[#39ff14] to-[#b7ff3c]",
   };
   const darkColors = {
-    navBg: "bg-linear-to-br from-gray-700 to-black",
+    navBg: "bg-black/55 border border-[#39ff14]/20",
     textPrimary: "text-white",
     textSecondary: "text-gray-300",
-    textHover: "text-orange-400",
-    textActive: "text-orange-400",
-    indicator: "from-orange-500 to-amber-500",
-    button: "from-orange-500 to-amber-500",
+    textHover: "hover:text-[#39ff14]",
+    textActive: "text-[#39ff14]",
+    indicator: "from-[#39ff14] to-[#b7ff3c]",
+    button: "from-[#39ff14] to-[#b7ff3c]",
   };
 
   const colors = darkMode ? darkColors : lightColors;
@@ -40,7 +46,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   };
   return (
     <div className="flex justify-center w-full fixed z-50 mt-4">
-      <motion.nav
+      <MotionNav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -48,15 +54,15 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       >
         <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
           {/* logo */}
-          <motion.a
+          <MotionA
             href="#home"
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <span className={`text-xl font-bold ${colors.textPrimary}`}>
-              Portfolio<span className="text-orange-500">.</span>
+            <span className={`brand-font text-xl font-bold ${colors.textPrimary}`}>
+              Portfolio<span className="text-[#39ff14]">.</span>
             </span>
-          </motion.a>
+          </MotionA>
           {/* Navigation Item */}
           <div className=" hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
@@ -66,29 +72,29 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 onClick={() => handleNavClick(item.name)}
                 className="relative"
               >
-                <motion.span
+                <MotionSpan
                   className={`font-medium transition-colors duration-300 ${
                     activeSection === item.name.toLowerCase()
                       ? colors.textActive
-                      : `${colors.textSecondary} hover:text-orange-500`
+                      : `${colors.textSecondary} ${colors.textHover}`
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   {item.name}
-                </motion.span>
+                </MotionSpan>
                 {activeSection === item.name.toLowerCase() && (
-                  <motion.div
+                  <MotionDiv
                     layoutId="navbar-indicator"
                     className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r rounded-full ${colors.indicator}`}
-                  ></motion.div>
+                  ></MotionDiv>
                 )}
               </a>
             ))}
           </div>
           <div className="flex items-center space-x-2">
             {/* Dark mode */}
-            <motion.button
+            <MotionButton
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={toggleDarkMode}
@@ -103,21 +109,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               ) : (
                 <Moon className="w-5 h-5 text-gray-700" />
               )}
-            </motion.button>
+            </MotionButton>
             {/* Button */}
-            <motion.a
+            <MotionA
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`hidden lg:block px-6 py-2 font-semibold rounded-full bg-linear-to-r ${colors.button}
-            text-white shedow-md hover:shadow-lg transition-shadow`}
+            text-black shadow-md hover:shadow-[0_0_28px_rgba(57,255,20,0.45)] transition-shadow`}
             >
               Hire Me
-            </motion.a>
+            </MotionA>
           </div>
           {/* Mobile menu button */}
           <div className="flex lg:hidden items-center space-x-4 px-2">
-            <motion.button
+            <MotionButton
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-lg ${darkMode ? "bg-gray-700" : "bg-gray-200"}`}
@@ -131,11 +137,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   className={`w-5 h-5 ${darkMode ? "text-white" : "text-gray-700"}`}
                 />
               )}
-            </motion.button>
+            </MotionButton>
           </div>
         </div>
         {isMenuOpen && (
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -154,13 +160,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   onClick={() => handleNavClick(item.name)}
                   className="block"
                 >
-                  <motion.div
+                  <MotionDiv
                     whileHover={{ x: 5 }}
                     className={`py-3 px-4 rounded-lg text-center ${
                       activeSection === item.name.toLowerCase()
                         ? darkMode
                           ? 'bg-gray-800'
-                          : 'bg-orange-50'
+                          : 'bg-[#39ff14]/10'
                         : ''
                     }`}
                   >
@@ -173,21 +179,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                     >
                       {item.name}
                     </span>
-                  </motion.div>
+                  </MotionDiv>
                 </a>
               ))}
-              <motion.a
+              <MotionA
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
                 whileTap={{ scale: 0.95 }}
-                className={`block py-3 px-4 text-center font-semibold rounded-lg bg-linear-to-r ${colors.button} text-white shadow-md`}
+                className={`block py-3 px-4 text-center font-semibold rounded-lg bg-linear-to-r ${colors.button} text-black shadow-md`}
               >
                 Hire Me
-              </motion.a>
+              </MotionA>
             </div>
-          </motion.div>
+          </MotionDiv>
         )}
-      </motion.nav>
+      </MotionNav>
     </div>
   );
 };

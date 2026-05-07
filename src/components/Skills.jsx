@@ -89,7 +89,6 @@ const Skills = ({ darkMode }) => {
   return (
     <section
       id="skills"
-      style={{ backgroundColor: darkMode ? "#111827" : "#f9fafb" }}
       className="py-14 relative overflow-hidden"
     >
       <div className="container px-5 py-14 mx-auto">
@@ -101,7 +100,7 @@ const Skills = ({ darkMode }) => {
             My
             <span
               style={{
-                background: "linear-gradient(to right, #f97316, #f59e0b)",
+                background: "linear-gradient(to right, #39ff14, #b7ff3c)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",
@@ -136,7 +135,7 @@ const Skills = ({ darkMode }) => {
                     : "linear-gradient(to bottom right,#ffffff, #f3f4f6 ",
                   borderColor: darkMode ? "#374151" : "#e5e7eb",
                 }}
-                className="h-full p-6 rounded-2xl border group hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-2 group-hover:shadow-[0_0_30px_rgb(255,165,0,0,0.15)]"
+                className="h-full p-6 rounded-2xl border group hover:border-[#39ff14]/50 transition-all duration-300 hover:-translate-y-2 group-hover:shadow-[0_0_30px_rgba(57,255,20,0.15)]"
               >
                 <div className="flex items-center mb-6">
                   <div
@@ -171,7 +170,7 @@ const Skills = ({ darkMode }) => {
                   </span>
                   <span
                     style={{
-                      background: "linear-gradient(to right, #f97316, #f59e0b",
+                      background: "linear-gradient(to right, #39ff14, #b7ff3c)",
                       WebkitBackgroundClip: "text",
                       backgroundClip: "text",
                       color: "transparent",
@@ -197,7 +196,7 @@ const Skills = ({ darkMode }) => {
                   <div
                     className="h-1 rounded-full opacity-70 group-hover:w-full transition-all duration-500 w-1/3"
                     style={{
-                      background: "linear-gradient(to right, #f97316, #f59e0b)"
+                      background: "linear-gradient(to right, #39ff14, #b7ff3c)"
                     }}
                   ></div>
                 </div>

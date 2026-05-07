@@ -1,12 +1,8 @@
 import React from "react";
-import contactImg from "../assets/ContactImg.png";
 const Contact = ({ darkMode }) => {
   return (
     <section
       id="contact"
-      style={{
-        backgroundColor: darkMode ? "#111827" : "#f9fafb",
-      }}
       className="py-16 sm:py-16 md:py-18 lg:py-20 overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,7 +14,7 @@ const Contact = ({ darkMode }) => {
             Get In
             <span
               style={{
-                background: "linear-gradient(to right,#f97316,#f59e0b)",
+                background: "linear-gradient(to right,#39ff14,#b7ff3c)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",
@@ -36,17 +32,7 @@ const Contact = ({ darkMode }) => {
             Let's discuss
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
-          <div
-            className="flex justify-center order-2 lg:order-1"
-            data-aos="fade-right"
-          >
-            <img
-              src={contactImg}
-              alt="Contact"
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto object-contain "
-            />
-          </div>
+        <div className="flex flex-cols-1 lg:flex-cols-2 gap-4 sm:gap-6 md:gap-8 justify-center items-center">
           <form
             style={{
               background: darkMode
@@ -62,22 +48,22 @@ const Contact = ({ darkMode }) => {
                 type="text"
                 placeholder="First Name"
                 style={{
-                  backgroundColor: darkMode ? "#374151" : "#faede3",
+                  backgroundColor: darkMode ? "#374151" : "#f2fff0",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
                   color: darkMode ? "white" : "#1f2937",
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-[#39ff14] focus:ring-2 focus:ring-[#39ff14]/20 transition-all"
                 required
               />
                <input
                 type="text"
                 placeholder="Last Name"
                 style={{
-                  backgroundColor: darkMode ? "#374151" : "#faede3",
+                  backgroundColor: darkMode ? "#374151" : "#f2fff0",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
                   color: darkMode ? "white" : "#1f2937",
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-[#39ff14] focus:ring-2 focus:ring-[#39ff14]/20 transition-all"
                 required
               />
             </div>
@@ -86,11 +72,11 @@ const Contact = ({ darkMode }) => {
                 type="email"
                 placeholder="Mail Address"
                 style={{
-                  backgroundColor: darkMode ? "#374151" : "#faede3",
+                  backgroundColor: darkMode ? "#374151" : "#f2fff0",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
                   color: darkMode ? "white" : "#1f2937",
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-3 sm:mb-4"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-[#39ff14] focus:ring-2 focus:ring-[#39ff14]/20 transition-all mb-3 sm:mb-4"
                 required
               />
               {/* Phone Number */}
@@ -98,30 +84,30 @@ const Contact = ({ darkMode }) => {
                 type="tel"
                 placeholder="Phone Number"
                 style={{
-                  backgroundColor: darkMode ? "#374151" : "#faede3",
+                  backgroundColor: darkMode ? "#374151" : "#f2fff0",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
                   color: darkMode ? "white" : "#1f2937",
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-3 sm:mb-4"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-[#39ff14] focus:ring-2 focus:ring-[#39ff14]/20 transition-all mb-3 sm:mb-4"
                 required
               />
               <textarea
                 rows="4"
                 placeholder="Your Message"
                 style={{
-                  backgroundColor: darkMode ? "#374151" : "#faede3",
+                  backgroundColor: darkMode ? "#374151" : "#f2fff0",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
                   color: darkMode ? "white" : "#1f2937",
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-4 sm:mb-6 resize-none"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-[#39ff14] focus:ring-2 focus:ring-[#39ff14]/20 transition-all mb-4 sm:mb-6 resize-none"
                 required
               />
               <button
                 type="submit"
                 style={{
-                  background: "linear-gradient(to right, #f97316,#f59e0b)",
+                  background: "linear-gradient(to right, #39ff14,#b7ff3c)",
                 }}
-                className="w-full py-2 sm:py-3 text-white font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-orange-500/25 hover:scale-[1.02] transition-all"
+                className="w-full py-2 sm:py-3 text-black font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-[#39ff14]/25 hover:scale-[1.02] transition-all"
               >
                 Send Message
               </button>

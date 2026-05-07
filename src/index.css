@@ -1,18 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-body{
-  font-family: 'Inter','sans-serif';
+:root {
+  --accent-neon: #39ff14;
+  --accent-neon-deep: #16a34a;
 }
 
-.dark{
+body {
+  font-family: "Roboto", sans-serif;
+  background: #050806;
+}
+
+.dark {
   color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+h1,
+h2,
+h3,
+.title-font,
+.brand-font {
+  font-family: "Playfair Display", serif;
+}
+
+.portfolio-bg {
+  background-color: #050806;
+  background-image:
+    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.22), transparent 24rem),
+    radial-gradient(circle at 82% 8%, rgba(57, 255, 20, 0.16), transparent 20rem),
+    radial-gradient(circle at 50% 78%, rgba(255, 255, 255, 0.12), transparent 28rem),
+    linear-gradient(135deg, #050806 0%, #10140f 45%, #030403 100%),
+    repeating-radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 4px);
+  background-blend-mode: screen, screen, screen, normal, overlay;
+}
+
+.portfolio-bg-light {
+  background-color: #f8faf8;
+  background-image:
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.95), transparent 20rem),
+    radial-gradient(circle at 82% 10%, rgba(57, 255, 20, 0.22), transparent 18rem),
+    linear-gradient(135deg, #ffffff 0%, #ecf5ec 48%, #dfe8df 100%),
+    repeating-radial-gradient(circle at 0 0, rgba(10, 20, 10, 0.08) 0 1px, transparent 1px 4px);
+  background-blend-mode: normal, normal, normal, multiply;
+}
+
 .star-shape {
   clip-path: polygon(
     50% 0%,

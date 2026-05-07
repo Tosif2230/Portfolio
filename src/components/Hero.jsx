@@ -25,14 +25,14 @@ const Hero = ({ darkMode }) => {
   const darkTheme = {
     textPrimary: "text-white",
     textSecondary: "text-gray-300",
-    buttonSecondary: `text-white border-2 border-orange-500 hover:bg-orange-600`,
-    decorativeCircle: `bg-orange-500 opacity-10`,
+    buttonSecondary: `text-white border-2 border-[#39ff14] hover:bg-[#39ff14] hover:text-black`,
+    decorativeCircle: `bg-[#39ff14] opacity-10`,
   };
   const lightTheme = {
     textPrimary: "text-gray-900",
     textSecondary: "text-gray-700",
-    buttonSecondary: `text-gray-800 border-2 border-orange-500 hover:bg-orange-500 hover:text-white`,
-    decorativeCircle: `bg-orange-400 opacity-20`,
+    buttonSecondary: `text-gray-800 border-2 border-[#39ff14] hover:bg-[#39ff14] hover:text-black`,
+    decorativeCircle: `bg-[#39ff14] opacity-20`,
   };
 
   const theme = darkMode ? darkTheme : lightTheme;
@@ -84,14 +84,14 @@ const Hero = ({ darkMode }) => {
                 data-aos-delay="700"
               >
                 <a href={CV} download className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
+                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-black bg-linear-to-r from-[#39ff14] to-[#b7ff3c] border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(57,255,20,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
                     <DownloadIcon className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
                     Download CV
                   </button>
                 </a>
                 <a href="#contact" className="w-full sm:w-auto">
                   <button
-                    className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary} justify-center border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
+                    className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary} justify-center py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(57,255,20,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
                   >
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Contact Me
