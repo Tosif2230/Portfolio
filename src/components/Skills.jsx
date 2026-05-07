@@ -113,7 +113,7 @@ const Skills = ({ darkMode }) => {
             className="text-lg max-w-2xl mx-auto leading-relaxed"
             style={{ color: darkMode ? "#d1d5db" : "#4b5563" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Here are the technologies and tools I have used to build modern and responsive full-stack web applications and projects.
           </p>
         </div>
         <div
